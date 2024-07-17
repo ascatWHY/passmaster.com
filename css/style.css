@@ -1,0 +1,192 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #050c26;
+}
+
+header {
+  background-color: #181f38;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.contact-button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.inputBox {
+  text-align: center;
+  width: 300px;
+}
+
+.inputBox h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin: 15px 0px 20px;
+  background: transparent;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.inputBox input::placeholder {
+  letter-spacing: 0px;
+}
+
+.inputBox #btn {
+  cursor: pointer;
+  background: #333;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.inputBox #btn:hover {
+  background: #9c27b0;
+}
+
+.contact-info {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #181f38;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.close-contact {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #181f38;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  .logo h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .inputBox input,
+  #btn,
+  .contact-button {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo h1 {
+    font-size: 1.4em;
+  }
+
+  .inputBox input,
+  #btn {
+    width: 300px;
+  }
+}
+
+.onas {
+  position: absolute;
+  top: 266px;
+  left: 585px;
+}
+
+.onas1 {
+  position: absolute;
+  bottom: 325px;
+}
+
+.h1,
+.h3 {
+  padding: 10px;
+}
