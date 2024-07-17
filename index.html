@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><h1>PASS MASTER- сгенерируйте себе безопасный пароль !</h1></a
+        >
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="block.html">О нас</a></li>
+          <button class="contact-button" onclick="toggleContact()">
+            Контакты
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="inputBox">
+        <h5>Сгенерировать пароль</h5>
+        <input
+          type="text"
+          name=""
+          placeholder="Create password"
+          id="password"
+          readonly=""
+        />
+        <div id="btn" onclick="getPassword()">Создать пароль</div>
+      </div>
+    </main>
+    <div class="contact-info" id="contactInfo">
+      <h2>Контактная информация</h2>
+      <p>Email: passmasterrr@gmail.com</p>
+      <p>
+        <a href="https://www.youtube.com/@PASSMASTER555">YOUTUBE</a>
+      </p>
+      <button onclick="toggleContact()" class="close-contact">Закрыть</button>
+    </div>
+    <footer>
+      &copy; 2024 passmaster.com - онлайн генератор безопасных паролей.
+    </footer>
+  </body>
+</html>
