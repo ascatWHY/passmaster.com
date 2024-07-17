@@ -3,4 +3,4 @@
 * CSS
 + JS
 
-[my projects](https://ascatwhy.github.io/passmaster.com/)
+Can you view [my projects](https://ascatwhy.github.io/passmaster.com/)
